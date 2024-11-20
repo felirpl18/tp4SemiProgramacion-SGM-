@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="330.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.seminarioprogramaciontp3.controlador.controladorListarTitulares">
+    <children>
+        <TableView fx:id="lista" prefHeight="293.0" prefWidth="800.0">
+            <columns>
+                <TableColumn prefWidth="113.0" text="Nombre" fx:id="colNombre" />
+                <TableColumn prefWidth="124.0" text="Apellido" fx:id="colApellido" />
+                <TableColumn prefWidth="270.40000915527344" text="Nro. Doc." fx:id="colNroDoc" />
+                <TableColumn prefWidth="282.3999938964844" text="Teléfono" fx:id="colTelefono" />
+            </columns>
+            <VBox.margin>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </VBox.margin>
+        </TableView>
+        <FlowPane alignment="CENTER">
+            <children>
+                <Button fx:id="btningreso1" onAction="#switchToTitulares" text="Nuevo">
+                    <FlowPane.margin>
+                        <Insets left="15.0" right="15.0" />
+                    </FlowPane.margin>
+                </Button>
+                <Button fx:id="btningreso" onAction="#eliminar" text="Eliminar" textOverrun="WORD_ELLIPSIS">
+                    <FlowPane.margin>
+                        <Insets left="15.0" right="15.0" />
+                    </FlowPane.margin>
+                </Button>
+            </children>
+            <VBox.margin>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </VBox.margin>
+        </FlowPane>
+    </children>
+</VBox>
+

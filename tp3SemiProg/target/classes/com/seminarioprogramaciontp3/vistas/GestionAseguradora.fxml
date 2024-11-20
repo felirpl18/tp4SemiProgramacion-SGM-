@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="164.0" prefWidth="350.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.seminarioprogramaciontp3.controlador.controladorGesAsegurdoras">
+   <children>
+      <HBox prefHeight="100.0" prefWidth="100.0">
+         <children>
+            <TableView fx:id="tablaAseguradoras" prefHeight="200.0" prefWidth="258.0" HBox.hgrow="ALWAYS">
+               <columns>
+                  <TableColumn prefWidth="126.0" text="Nombre" fx:id="colNombre" />
+                  <TableColumn prefWidth="114.0" text="Email" fx:id="colEmail" />
+                  <TableColumn prefWidth="97.0" text="Cuit" fx:id="colCuit" />
+               </columns>
+               <HBox.margin>
+                  <Insets top="5.0" />
+               </HBox.margin>
+            </TableView>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="37.0" prefWidth="290.0">
+         <children>
+            <Button fx:id="btnNuevo" onAction="#NuevaAseguradora" prefHeight="25.0" prefWidth="62.0" text="Nuevo">
+               <HBox.margin>
+                  <Insets left="15.0" right="15.0" />
+               </HBox.margin></Button>
+            <Button fx:id="btnEliminar" onAction="#EliminarAseguradora" prefHeight="25.0" prefWidth="70.0" text="Eliminar" textOverrun="WORD_ELLIPSIS">
+               <HBox.margin>
+                  <Insets left="15.0" right="15.0" />
+               </HBox.margin></Button>
+         </children>
+         <VBox.margin>
+            <Insets top="15.0" />
+         </VBox.margin>
+      </HBox>
+   </children>
+</VBox>

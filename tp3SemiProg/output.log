@@ -1,0 +1,39 @@
+[EL Fine]: server: 2024-06-29 21:27:10.468--Thread(Thread[#27,JavaFX Application Thread,5,main])--Configured server platform: org.eclipse.persistence.platform.server.NoServerPlatform
+[EL Warning]: metadata: 2024-06-29 21:27:10.62--ServerSession(1458309680)--Thread(Thread[#27,JavaFX Application Thread,5,main])--The java.lang.Object class was compiled with an unsupported JDK. Report this error to the EclipseLink open source project.
+java.lang.IllegalArgumentException: Unsupported class file major version 66
+[EL Severe]: metadata: 2024-06-29 21:27:10.624--ServerSession(1458309680)--Thread(Thread[#27,JavaFX Application Thread,5,main])--The java.lang.Object class was compiled with an unsupported JDK. Report this error to the EclipseLink open source project.
+java.lang.ArrayIndexOutOfBoundsException: Index 8 out of bounds for length 0
+[EL Config]: metadata: 2024-06-29 21:27:10.627--ServerSession(1458309680)--Thread(Thread[#27,JavaFX Application Thread,5,main])--The access type for the persistent class [class com.seminarioprogramaciontp3.dto.MecanicoDTO] is set to [FIELD].
+[EL Warning]: metadata: 2024-06-29 21:27:10.631--ServerSession(1458309680)--Thread(Thread[#27,JavaFX Application Thread,5,main])--The java.lang.String class was compiled with an unsupported JDK. Report this error to the EclipseLink open source project.
+java.lang.IllegalArgumentException: Unsupported class file major version 66
+[EL Severe]: metadata: 2024-06-29 21:27:10.631--ServerSession(1458309680)--Thread(Thread[#27,JavaFX Application Thread,5,main])--The java.lang.String class was compiled with an unsupported JDK. Report this error to the EclipseLink open source project.
+java.lang.ArrayIndexOutOfBoundsException: Index 8 out of bounds for length 0
+[EL Config]: metadata: 2024-06-29 21:27:10.645--ServerSession(1458309680)--Thread(Thread[#27,JavaFX Application Thread,5,main])--The access type for the persistent class [class com.seminarioprogramaciontp3.dto.TitularDTO] is set to [FIELD].
+[EL Config]: metadata: 2024-06-29 21:27:10.646--ServerSession(1458309680)--Thread(Thread[#27,JavaFX Application Thread,5,main])--The access type for the persistent class [class com.seminarioprogramaciontp3.dto.AseguradoraDTO] is set to [FIELD].
+[EL Config]: metadata: 2024-06-29 21:27:10.646--ServerSession(1458309680)--Thread(Thread[#27,JavaFX Application Thread,5,main])--The access type for the persistent class [class com.seminarioprogramaciontp3.dto.VehiculoDTO] is set to [FIELD].
+[EL Config]: metadata: 2024-06-29 21:27:10.647--ServerSession(1458309680)--Thread(Thread[#27,JavaFX Application Thread,5,main])--The alias name for the entity class [class com.seminarioprogramaciontp3.dto.MecanicoDTO] is being defaulted to: MecanicoDTO.
+[EL Config]: metadata: 2024-06-29 21:27:10.661--ServerSession(1458309680)--Thread(Thread[#27,JavaFX Application Thread,5,main])--The alias name for the entity class [class com.seminarioprogramaciontp3.dto.TitularDTO] is being defaulted to: TitularDTO.
+[EL Config]: metadata: 2024-06-29 21:27:10.661--ServerSession(1458309680)--Thread(Thread[#27,JavaFX Application Thread,5,main])--The column name for element [id_titular] is being defaulted to: ID_TITULAR.
+[EL Config]: metadata: 2024-06-29 21:27:10.661--ServerSession(1458309680)--Thread(Thread[#27,JavaFX Application Thread,5,main])--The alias name for the entity class [class com.seminarioprogramaciontp3.dto.AseguradoraDTO] is being defaulted to: AseguradoraDTO.
+[EL Config]: metadata: 2024-06-29 21:27:10.662--ServerSession(1458309680)--Thread(Thread[#27,JavaFX Application Thread,5,main])--The alias name for the entity class [class com.seminarioprogramaciontp3.dto.VehiculoDTO] is being defaulted to: VehiculoDTO.
+[EL Config]: metadata: 2024-06-29 21:27:10.662--ServerSession(1458309680)--Thread(Thread[#27,JavaFX Application Thread,5,main])--The column name for element [nombreTitular] is being defaulted to: NOMBRETITULAR.
+[EL Config]: metadata: 2024-06-29 21:27:10.662--ServerSession(1458309680)--Thread(Thread[#27,JavaFX Application Thread,5,main])--The column name for element [nombreAseguradora] is being defaulted to: NOMBREASEGURADORA.
+[EL Info]: 2024-06-29 21:27:10.691--ServerSession(1458309680)--Thread(Thread[#27,JavaFX Application Thread,5,main])--EclipseLink, version: Eclipse Persistence Services - 3.0.0.v202012081010
+[EL Fine]: connection: 2024-06-29 21:27:10.894--Thread(Thread[#27,JavaFX Application Thread,5,main])--Detected database platform: null
+[EL Info]: connection: 2024-06-29 21:27:10.894--Thread(Thread[#27,JavaFX Application Thread,5,main])--Not able to detect platform for vendor name [SQLite[3.34.0, 3]]. Defaulting to [org.eclipse.persistence.platform.database.DatabasePlatform]. The database dialect used may not match with the database you are using. Please explicitly provide a platform using property "eclipselink.target-database".
+[EL Fine]: connection: 2024-06-29 21:27:10.899--ServerSession(1458309680)--Connection(652723372)--Thread(Thread[#27,JavaFX Application Thread,5,main])--connecting(DatabaseLogin(
+	platform=>DatabasePlatform
+	user name=> ""
+	datasource URL=> "jdbc:sqlite:src/main/resources/com/seminarioprogramaciontp3/dao/database.db"
+))
+[EL Config]: connection: 2024-06-29 21:27:10.901--ServerSession(1458309680)--Connection(1331506823)--Thread(Thread[#27,JavaFX Application Thread,5,main])--Connected: jdbc:sqlite:src/main/resources/com/seminarioprogramaciontp3/dao/database.db
+	User: null
+	Database: SQLite  Version: 3.34.0
+	Driver: SQLite JDBC  Version: 3.34.0
+[EL Fine]: connection: 2024-06-29 21:27:10.939--ServerSession(1458309680)--Thread(Thread[#27,JavaFX Application Thread,5,main])--/file:/C:/Users/Felir/Downloads/tp4SemiProgramacion/tp4SemiProgramacion/tp4SemiProg/tp3SemiProg/target/classes/_myPersistenceUnit login successful
+[EL Fine]: sql: 2024-06-29 21:27:10.96--ServerSession(1458309680)--Connection(1331506823)--Thread(Thread[#27,JavaFX Application Thread,5,main])--SELECT * FROM SEQUENCE WHERE SEQ_NAME = 'SEQUENCE'
+[EL Fine]: sql: 2024-06-29 21:27:10.961--ServerSession(1458309680)--Connection(1331506823)--Thread(Thread[#27,JavaFX Application Thread,5,main])--SELECT * FROM SEQUENCE WHERE SEQ_NAME = 'SEQ_GEN_IDENTITY'
+[EL Fine]: sql: 2024-06-29 21:27:11.133--ServerSession(1458309680)--Connection(1331506823)--Thread(Thread[#27,JavaFX Application Thread,5,main])--SELECT ID_TITULAR, apellido, nombre, nro_doc, telefono FROM Titular
+[EL Fine]: sql: 2024-06-29 21:27:14.803--ClientSession(681529867)--Connection(1331506823)--Thread(Thread[#27,JavaFX Application Thread,5,main])--DELETE FROM Titular WHERE (ID_TITULAR = ?)
+	bind => [0]
+[EL Fine]: sql: 2024-06-29 21:27:14.816--ServerSession(1458309680)--Connection(1331506823)--Thread(Thread[#27,JavaFX Application Thread,5,main])--SELECT ID_TITULAR, apellido, nombre, nro_doc, telefono FROM Titular

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="269.0" prefWidth="394.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.seminarioprogramaciontp3.controlador.controladorAsignarTurno">
+   <children>
+      <HBox alignment="CENTER" prefHeight="44.0" prefWidth="395.0">
+         <children>
+            <Label prefWidth="75.0" text="Titular">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </Label>
+            <ComboBox fx:id="combobox_titulares" onAction="#combobox_titulares_change" prefWidth="275.0">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </ComboBox>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="44.0" prefWidth="395.0">
+         <children>
+            <Label prefWidth="75.0" text="Vehículo">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </Label>
+            <ComboBox fx:id="combobox_vehiculos" prefWidth="275.0">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </ComboBox>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="44.0" prefWidth="395.0">
+         <children>
+            <Label prefWidth="75.0" text="Servicio">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </Label>
+            <ComboBox fx:id="combobox_servicios" onAction="#combobox_servicios_change" prefWidth="275.0">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </ComboBox>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="44.0" prefWidth="395.0">
+         <children>
+            <Label prefWidth="75.0" text="Mecánico">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </Label>
+            <ComboBox fx:id="combobox_mecanicos" prefWidth="275.0">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </ComboBox>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="78.0">
+         <children>
+            <VBox alignment="CENTER">
+               <children>
+                  <HBox alignment="CENTER">
+                     <children>
+                        <Label prefWidth="75.0" text="Fecha">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </Label>
+                        <DatePicker fx:id="dpdia_atencion" editable="false" prefWidth="175.0" />
+                     </children>
+                  </HBox>
+                  <AnchorPane disable="true" prefHeight="200.0" prefWidth="200.0" />
+                  <HBox alignment="CENTER">
+                     <children>
+                        <Label prefHeight="17.0" prefWidth="107.0" text="Hora">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </Label>
+                        <TextField fx:id="txthora_atencion" alignment="CENTER" prefHeight="25.0" prefWidth="52.0" />
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefWidth="15.0" text=" : " textAlignment="CENTER" />
+                        <TextField fx:id="txtmin_atencion" alignment="CENTER" prefHeight="25.0" prefWidth="49.0">
+                           <HBox.margin>
+                              <Insets right="25.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="44.0" prefWidth="395.0">
+         <children>
+            <Button fx:id="btncancelar" cancelButton="true" mnemonicParsing="false" onAction="#cancelar" text="Volver">
+               <HBox.margin>
+                  <Insets bottom="6.0" left="6.0" right="6.0" top="6.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="btnguardar" cancelButton="true" layoutX="219.0" layoutY="17.0" mnemonicParsing="false" onAction="#guardar" text="Asignar" />
+         </children>
+      </HBox>
+   </children>
+</VBox>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="894.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.seminarioprogramaciontp3.controlador.controladorTurnos">
+   <children>
+      <HBox alignment="CENTER" prefHeight="30.0" prefWidth="731.0">
+         <children>
+            <ComboBox fx:id="combobox_especialidades" disable="true" onAction="#combobox_especialidad_change" opacity="0.0" prefWidth="150.0">
+               <HBox.margin>
+                  <Insets bottom="6.0" right="6.0" top="6.0" />
+               </HBox.margin>
+            </ComboBox>
+            <ComboBox fx:id="combobox_mecanicos" disable="true" layoutX="153.0" layoutY="16.0" opacity="0.0" prefWidth="150.0">
+               <HBox.margin>
+                  <Insets bottom="6.0" right="6.0" top="6.0" />
+               </HBox.margin>
+            </ComboBox>
+            <Label layoutX="313.0" layoutY="20.0" text="Fecha">
+               <HBox.margin>
+                  <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+               </HBox.margin>
+            </Label>
+            <DatePicker fx:id="dtpFecha" nodeOrientation="LEFT_TO_RIGHT">
+               <HBox.margin>
+                  <Insets bottom="6.0" right="6.0" top="6.0" />
+               </HBox.margin>
+            </DatePicker>
+            <Button fx:id="bttnFiltrar" mnemonicParsing="false" onAction="#bttnFiltrar_OnClick" text="Filtrar">
+               <HBox.margin>
+                  <Insets bottom="6.0" left="6.0" right="6.0" top="6.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="btnlimpiar" mnemonicParsing="false" onAction="#btnlimpiar_OnClick" text="Limpiar" />
+         </children>
+      </HBox>
+      <HBox prefHeight="376.0" prefWidth="771.0">
+         <children>
+            <TableView fx:id="tbViewTurnos" prefHeight="320.0" prefWidth="601.0" HBox.hgrow="ALWAYS">
+               <columns>
+                  <TableColumn fx:id="colAsistencia" prefWidth="68.19999539852142" text="Asistencia" />
+                  <TableColumn fx:id="colTitular" prefWidth="92.60001373291016" text="Titular" />
+                  <TableColumn fx:id="colVehiculo" prefWidth="89.60000610351562" text="Vehículo" />
+                  <TableColumn fx:id="colServicio" prefWidth="104.0" text="Reparacion" />
+                  <TableColumn fx:id="colMecanico" prefWidth="123.20001220703125" text="Mecánico" />
+                  <TableColumn fx:id="colFecha" prefWidth="103.60003662109375" text="Fecha" />
+                  <TableColumn fx:id="colHorario" prefWidth="115.60000610351562" text="Horario" />
+
+               </columns>
+            </TableView>
+            <TilePane alignment="CENTER" prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="btnImprimirComprobante" mnemonicParsing="false" onAction="#imprimirComprobante" text="Imprimir Ficha" />
+                  <Button fx:id="brnAsistencia" mnemonicParsing="false" onAction="#confirmarAsistencia" text="Registrar Asistencia" />
+               </children>
+            </TilePane>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Button fx:id="btnAsignarTurno" mnemonicParsing="false" onAction="#switchToAsignarTurno" text="Asignar Turno">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </Button>
+            <Button fx:id="btnEliminarTurno" mnemonicParsing="false" onAction="#eliminarTurno" text="Eliminar Turno" />
+         </children>
+      </HBox>
+   </children>
+</VBox>
